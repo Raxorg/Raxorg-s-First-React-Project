@@ -1,5 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Hello from "./components/FunctionalComponent";
+import Comp from "./components/ClassComponent";
+import Profile from "./components/Profile";
+import PropClass from "./components/ClassPropsExample";
+import Counter from "./components/Counter";
+import FunctionalButton from "./components/FunctionalEvent";
+import ClassEvent from "./components/ClassEvent";
 
 function App() {
   return (
@@ -17,6 +24,17 @@ function App() {
         >
           Learn React
         </a>
+        <Hello />
+        <Comp prop="Proppy" />
+        <Profile name="Groxar" lastname="Sergosia">
+          <br></br>Child component reporting
+        </Profile>
+        <Profile name="Raxorg" lastname="Montoya" />
+        <Profile name="Silent" lastname="Trap" />
+        <PropClass prop="Example"></PropClass>
+        <Counter></Counter>
+        <FunctionalButton></FunctionalButton>
+        <ClassEvent></ClassEvent>
       </header>
     </div>
   );
